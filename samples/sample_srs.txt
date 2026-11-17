@@ -1,0 +1,48 @@
+Software Requirements Specification — QuickBite Food Delivery App (v0.3, draft)
+
+1. Introduction
+QuickBite connects customers with local restaurants and delivery partners in Tier-2 Indian cities. This document lists the requirements for the first release.
+
+2. Functional Requirements
+
+2.1 Accounts
+- The system shall allow a customer to register using a mobile number and a one-time password (OTP).
+- The OTP shall expire 5 minutes after it is sent.
+- The system should let users log in quickly and easily.
+- A customer shall be able to save up to 5 delivery addresses.
+- It must support social login etc.
+
+2.2 Browsing and ordering
+- The system shall display restaurants within 7 km of the customer's selected address, sorted by estimated delivery time.
+- Customers shall be able to filter restaurants by cuisine, rating and veg-only.
+- The system shall allow customers to add items to a cart, apply a coupon and place an order, and shall send an SMS and email confirmation and update the restaurant dashboard.
+- The cart may hold items from more than one restaurant.
+- An order can only contain items from a single restaurant.
+- Coupon rules are TBD.
+
+2.3 Payments
+- The system shall support UPI, debit/credit cards and cash on delivery.
+- Payments shall be processed through an external payment gateway.
+- If a payment fails, the system shall retain the cart and allow the customer to retry payment.
+- Refunds should be processed as soon as possible.
+
+2.4 Delivery
+- The system shall assign each order to the nearest available delivery partner.
+- Customers shall see the live location of the delivery partner on a map, updated every 10 seconds.
+- Delivery partners shall be able to mark an order as picked up and delivered.
+
+2.5 Restaurant dashboard
+- Restaurant staff shall be able to accept or reject an incoming order within 3 minutes; unanswered orders shall be auto-rejected.
+- Restaurant staff shall be able to mark menu items as out of stock.
+- The admin shall be able to onboard new restaurants and deactivate restaurants.
+
+3. Non-Functional Requirements
+- The app should be fast.
+- The home screen shall load within 2 seconds on a 4G connection for 95% of requests.
+- The system shall support 5,000 concurrent users.
+- The system must be secure and user-friendly.
+- All payment data shall be handled in compliance with PCI DSS.
+- The system shall be available 99.5% of the time each month, excluding planned maintenance.
+- The app shall be usable in English and Hindi.
+- The interface should be intuitive for elderly users.
+- Customer data shall be retained as appropriate.

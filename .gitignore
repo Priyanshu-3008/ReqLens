@@ -1,0 +1,26 @@
+# Secrets — never commit these
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated reports
+*_review.xlsx
+*_review.md
+*_requirements.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
